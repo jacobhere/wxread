@@ -13,7 +13,7 @@ ENV PATH="/usr/local/bin:${PATH}"
 
 # 复制项目文件
 # COPY main.py push.py config.py ./
-COPY main.py push.py config.py log_utils.py ./
+COPY main.py push.py config.py log_utils.py daily_task.py ./
 
 # 创建日志目录并设置权限
 RUN mkdir -p /app/logs && chmod 777 /app/logs
